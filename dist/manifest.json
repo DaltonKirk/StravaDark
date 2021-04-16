@@ -1,0 +1,28 @@
+{
+    "name": "StravaDark",
+    "description": "Dark theme for Strava",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "webNavigation"
+    ],
+    "host_permissions": [
+        "https://www.strava.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "/style.css"
+            ],
+            "matches": [
+                "https://www.strava.com/*"
+            ]
+        }
+    ]
+}
