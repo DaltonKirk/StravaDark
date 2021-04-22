@@ -1,3 +1,27 @@
+$font-colour: #a3a3a3;
+$strava-colour: #fc4c02;
+
 body {
     background-color: #3d3d3d !important;
+
+    .card,
+    .card-body {
+        background-color: #22212b;
+        color: $font-colour;
+    }
+
+    .page {
+        a:not(.btn):link,
+        .btn.btn-link {
+            color: $strava-colour;
+        }
+    }
+
+    .stat-subtext {
+        color: $font-colour;
+    }
+
+    .feed-header #feed-filter .dropdown-toggle {
+        background-color: #9d9d9d;
+    }
 }
