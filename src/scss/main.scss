@@ -10,15 +10,9 @@ body {
   }
 
   .page {
-    a {
-      &:not(.btn) {
-        &:link,
-        .btn {
-          &.btn-link {
-            color: $strava-orange;
-          }
-        }
-      }
+    a:not(.btn):link,
+    .btn.btn-link {
+      color: $strava-orange;
     }
   }
 
