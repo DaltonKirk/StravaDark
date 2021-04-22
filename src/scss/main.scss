@@ -1,26 +1,36 @@
 @import './settings';
 
 body {
-    background-color: $bg-colour !important;
+  background-color: $bg-colour !important;
 
-    .card,
-    .card-body {
-        background-color: $dark-grey;
-        color: $font-colour;
-    }
+  .card,
+  .card-body {
+    background-color: $dark-grey;
+    color: $font-colour;
+  }
 
-    .page {
-        a:not(.btn):link,
-        .btn.btn-link {
+  .page {
+    a {
+      &:not(.btn) {
+        &:link,
+        .btn {
+          &.btn-link {
             color: $strava-orange;
+          }
         }
+      }
     }
+  }
 
-    .stat-subtext {
-        color: $font-colour;
-    }
+  .stat-subtext {
+    color: $font-colour;
+  }
 
-    .feed-header #feed-filter .dropdown-toggle {
+  .feed-header {
+    #feed-filter {
+      .dropdown-toggle {
         background-color: $light-grey;
+      }
     }
+  }
 }
