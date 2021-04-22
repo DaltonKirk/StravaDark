@@ -1,19 +1,18 @@
-$font-colour: #a3a3a3;
-$strava-colour: #fc4c02;
+@import './settings';
 
 body {
-    background-color: #3d3d3d !important;
+    background-color: $bg-colour !important;
 
     .card,
     .card-body {
-        background-color: #22212b;
+        background-color: $dark-grey;
         color: $font-colour;
     }
 
     .page {
         a:not(.btn):link,
         .btn.btn-link {
-            color: $strava-colour;
+            color: $strava-orange;
         }
     }
 
@@ -22,6 +21,6 @@ body {
     }
 
     .feed-header #feed-filter .dropdown-toggle {
-        background-color: #9d9d9d;
+        background-color: $light-grey;
     }
 }
